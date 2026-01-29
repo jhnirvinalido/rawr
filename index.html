@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My Letter</title>
+    <style>
+        body { 
+            font-family: Arial, sans-serif;
+            text-align: center; 
+            margin: 90px; 
+            background-color: #fff0f5; 
+        }
+        .intro img {
+          margin-top: 50px;
+            border: none;
+            width: 100%;
+            max-width: 300px; 
+            height: 300px;   
+        }
+        .intro h1 {
+            font-size: 32px;
+            margin-top: 20px; 
+            color: #ff69b4;
+        }
+        .intro p {
+            font-size: 16px;
+            margin-top: 10px;
+            color: #555;
+        }
+        .button-container {
+            margin-top: 20px;
+        }
+        .button-container button {
+            background-color: #ff69b4;
+            color: white;
+            border: none;
+            border-radius: 20px;
+            padding: 12px 20px;
+            margin: 10px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+        .button-container button:hover {
+            background-color: #ff1493;
+            transform: scale(1.1);
+        }
+    </style>
+</head>
+<body>
+    <div class="intro">
+      <img src="output-onlinegiftools (1).gif" alt="">
+
+        <h1>HI BABY!</h1>
+        <p>WOULD YOU LIKE TO CONTINUE</p>
+        <div class="button-container">
+            <button onclick="GoYes()">Yes</button>
+            <button onclick="GoNo()">No</button>
+        </div>
+    </div>
+
+    <script>
+        function GoNo() {
+            // Navigate to index.html
+            window.location.href = "no.html";
+        }
+        function GoYes(){
+            window.location.href = "flower.html";
+        }
+    </script>
+</body>
+</html>
